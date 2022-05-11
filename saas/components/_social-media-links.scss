@@ -1,0 +1,78 @@
+
+/* ========== OUR TEAM SECTION SOCIAL MEDIA ========== */
+
+.social-media-list {
+    @extend .list;
+    display: flex;
+    padding: 0px 32px 30px 32px;
+    align-items: center;
+    justify-content: space-between;
+
+    &_link {
+        @extend .link;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: var(--social-media-icon-color);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            fill: var(--social-media-icon-color-hover);
+            background-color: var(--social-media-background-color-hover);
+        }
+    }
+}
+
+.social-media_icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* ========== FOOTER SOCIAL MEDIA ========== */
+
+.footer-social-media {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.footer-social-media-list {
+    @extend .list;   
+    display: flex;
+
+    &__link {
+        @extend .link;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: var(--social-media-icon-color-hover);
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: var(--social-media-background-color-hover);
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* ========== END FOOTER SOCIAL MEDIA ========== */

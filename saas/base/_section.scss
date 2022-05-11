@@ -1,0 +1,19 @@
+.section {
+    /* width: 1600px;
+    margin-left: auto;
+    margin-right: auto; */
+    padding: 94px 0;
+}
+
+.section-only-top {
+    padding-top: 94px;
+}
+
+.header, .section-hero, .section-about-us, .section-our-team, 
+.section-our-clients {
+    @extend .section;
+}
+
+.section-discription {
+    @extend .section-only-top;
+}

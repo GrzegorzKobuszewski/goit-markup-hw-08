@@ -1,0 +1,35 @@
+/* ========== OUR CLIENTS SECTION ========== */
+
+.section-our-clients {
+    display: flex;
+    justify-content: center;
+}
+
+.section-our-clients-list {
+    @extend .list;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin-top: 50px;
+}
+
+.section-our-clients__link {
+    display: flex;
+    max-width: 170px;
+    max-height: 92px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 1px solid var(--social-media-icon-color);
+    fill: var(--social-media-icon-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--hover-color);
+        fill: var(--hover-color);
+    }
+}
+
+/* ========== END CLIENTS SECTION ========== */

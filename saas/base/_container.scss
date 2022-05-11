@@ -1,0 +1,21 @@
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    align-items: center;
+    margin: 0px auto;
+
+    .header & {
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+    .footer & {
+        display: flex;
+        align-items: baseline;
+    }
+
+    
+
+}

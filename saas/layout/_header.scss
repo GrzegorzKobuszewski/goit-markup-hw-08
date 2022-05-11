@@ -1,0 +1,22 @@
+/* ========== HEADER ========== */
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.header .contact-list {
+    margin-left: auto;
+}
+
+.adress-link {
+    display: flex;
+    align-items: center;
+    color: var(--text-color-grey);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========== END HEADER ========== */
