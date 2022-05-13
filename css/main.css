@@ -760,6 +760,10 @@ img {
 
 /* ========== END DISCRIPTION SECTION ========== */
 /* ========== ABOUT US SECTION ========== */
+.section-about-us {
+  display: flex;
+}
+
 .about-us__list {
   display: flex;
   flex-wrap: wrap;
