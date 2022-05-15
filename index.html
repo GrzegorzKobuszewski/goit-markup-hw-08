@@ -63,7 +63,7 @@
 
     <main>
         <!-- HERO -->
-        <!-- <section class="section-hero">
+        <section class="section-hero">
             <div class="container">
                 <ul class="section-hero_list">
                     <li class="section-hero-list__item">
@@ -74,10 +74,10 @@
                     </li>
                 </ul>            
             </div>
-        </section> -->
+        </section>
 
         <!-- 4x DISCRIPTION -->
-        <!-- <section class="section-discription">
+        <section class="section-discription">
             <div class="container">
                 <h2 class="section-title section-title__discription" hidden> Opisy </h2>
                 <ul class="discription-list list">
@@ -115,10 +115,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- ABOUT US SECTION -->
-        <!-- <section class="section-about-us">
+        <section class="section-about-us">
             <div class="container">
                 <h2 class="section-title section-title__about-us">
                     Czym się zajmujemy
@@ -127,8 +127,15 @@
                     <li class="about-us__item">
                         <a class="about-us__link" href="#">
                             <div class="about-us__thumb">
-                                <img class="about-us__thumb_img" src="./images/what-we-do-01.jpg"
-                                alt="Laptop, pisanie na klawiaturze" width="370" height="294">
+
+                                <picture>
+                                    <source srcset="
+                                        ./images/about-us/what-we-do-01-370-desktop@1x.jpg 1x,
+                                        ./images/about-us/what-we-do-01-370-desktop@2x.jpg 2x" />
+                                    <img class="about-us__thumb_img" src="./images/about-us/what-we-do-01-370-desktop@1x.jpg"
+                                        alt="Laptop, pisanie na klawiaturze" width="370" height="294" />
+                                </picture>
+
                                 <h3 class="about-us__thumb_label">
                                     aplikacje komputerowe
                                 </h3>
@@ -138,28 +145,42 @@
                     <li class="about-us__item">
                         <a class="about-us__link" href="#">
                             <div class="about-us__thumb">
+
+                                <picture>
+                                    <source srcset="
+                                        ./images/about-us/what-we-do-02-370-desktop@1x.jpg 1x,
+                                        ./images/about-us/what-we-do-02-370-desktop@2x.jpg 2x" />
+                                    <img class="about-us__thumb_img" src="./images/about-us/what-we-do-02-370-desktop@1x.jpg"
+                                        alt="Używanie telefonu przy komputerze" width="370" height="294" />
+                                </picture>
+
                                 <h3 class="about-us__thumb_label">
                                     aplikacje mobilne
                                 </h3>
-                                <img class="about-us__thumb_img" src="./images/what-we-do-02.jpg"
-                                alt="Używanie telefonu przy komputerze" width="370" height="294">
                             </div>
                         </a>
                         </li>
                     <li class="about-us__item">
                         <a class="about-us__link" href="#">
                             <div class="about-us__thumb">
+
+                                <picture>
+                                    <source srcset="
+                                        ./images/about-us/what-we-do-03-370-desktop@1x.jpg 1x,
+                                        ./images/about-us/what-we-do-03-370-desktop@2x.jpg 2x" />
+                                    <img class="about-us__thumb_img" src="./images/about-us/what-we-do-03-370-desktop@1x.jpg"
+                                        alt="Praca na tablecie, paleta barw, dobieranie kolorów" width="370" height="294" />
+                                </picture>
+
                                 <h3 class="about-us__thumb_label">
                                     rozwiązania graficzne
                                 </h3>
-                                <img class="about-us__thumb_img" src="./images/what-we-do-03.jpg"
-                                alt="Praca na tablecie, paleta barw, dobieranie kolorów" width="370" height="294">
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- OUR TEAM SECTION -->
         <section class="section-our-team">
@@ -378,7 +399,7 @@
         </section>
 
         <!-- OUR CLIENTS SECTION -->
-        <!-- <section class="section-our-clients">
+        <section class="section-our-clients">
             <div class="container">
                 <h2 class="section-title section-title__our-clients">
                     Nasi klienci
@@ -429,62 +450,67 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
-            <div class="footer__address">
-                <a class="logo__footer" href="index.html">Web<span class="logo_dark-theme">Studio</span></a>
-                <address class="address">
-                    <ul class="address-list">
-                        <li class="address-list__item">
-                            <a class="address-list__link address-list__link_map" href="https://goo.gl/maps/ernnG9uicjJtaxMD9" target="blank">m.
-                                Warszawa, Aleje Jerozolimskie 21</a>
-                        </li>
-                        <li class="address-list__item">
-                            <a class="address-list__link address-list__link_mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="address-list__item">
-                            <a class="address-list__link address-list__link_tel" href="tel:+48111111111">+48 111 111 111</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
 
-            <div class="footer-social-media">
-                <p class="call-to-action">Dołącz do nas</p>
-                    <ul class="footer-social-media-list">
-                        <li class="footer-social-media-list__item">
-                            <a class="footer-social-media-list__link" href="#">
-                                <svg class="footer-social-media-list__icon">
-                                    <use href="images/icons.svg#icon-sm-01-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-media-list__item">
-                            <a class="footer-social-media-list__link" href="#">
-                                <svg class="footer-social-media-list__icon">
-                                    <use href="images/icons.svg#icon-sm-02-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-media-list__item">
-                            <a class="footer-social-media-list__link" href="#">
-                                <svg class="footer-social-media-list__icon">
-                                    <use href="images/icons.svg#icon-sm-03-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-media-list__item">
-                            <a class="footer-social-media-list__link" href="#">
-                                <svg class="footer-social-media-list__icon">
-                                    <use href="images/icons.svg#icon-sm-04-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+            <div class="footer-address-and-social-media-container">
+
+                <div class="footer__address">
+                    <a class="logo__footer" href="index.html">Web<span class="logo_dark-theme">Studio</span></a>
+                    <address class="address">
+                        <ul class="address-list">
+                            <li class="address-list__item">
+                                <a class="address-list__link address-list__link_map" href="https://goo.gl/maps/ernnG9uicjJtaxMD9" target="blank">m.
+                                    Warszawa, Aleje Jerozolimskie 21</a>
+                            </li>
+                            <li class="address-list__item">
+                                <a class="address-list__link address-list__link_mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="address-list__item">
+                                <a class="address-list__link address-list__link_tel" href="tel:+48111111111">+48 111 111 111</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <div class="footer-social-media">
+                    <p class="call-to-action">Dołącz do nas</p>
+                        <ul class="footer-social-media-list">
+                            <li class="footer-social-media-list__item">
+                                <a class="footer-social-media-list__link" href="#">
+                                    <svg class="footer-social-media-list__icon">
+                                        <use href="images/icons.svg#icon-sm-01-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-media-list__item">
+                                <a class="footer-social-media-list__link" href="#">
+                                    <svg class="footer-social-media-list__icon">
+                                        <use href="images/icons.svg#icon-sm-02-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-media-list__item">
+                                <a class="footer-social-media-list__link" href="#">
+                                    <svg class="footer-social-media-list__icon">
+                                        <use href="images/icons.svg#icon-sm-03-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-media-list__item">
+                                <a class="footer-social-media-list__link" href="#">
+                                    <svg class="footer-social-media-list__icon">
+                                        <use href="images/icons.svg#icon-sm-04-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+
             </div>
 
             <div class="footer-newsletter">
@@ -506,7 +532,7 @@
             </div>
 
         </div>
-    </footer> -->
+    </footer>
 
     <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">

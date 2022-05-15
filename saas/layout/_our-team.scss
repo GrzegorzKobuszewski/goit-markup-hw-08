@@ -9,13 +9,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 100px;
+        padding-top: 30px;
         list-style: none;
-        
-    }
-
-    &:not(:last-child) {
-        margin-bottom: 30px;
     }
     
     &__item {
@@ -26,13 +21,16 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         margin: 0px;
-        
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 
     &_name {
         display: block;
         font-weight: 500;
-        font-size: 32px;
+        font-size: 16px;
         line-height: 1.188;
         text-align: center;
         letter-spacing: 0.03em;
