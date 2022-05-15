@@ -1,0 +1,26 @@
+.mobile-menu {
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    width: 480px;
+    min-height: 800px;
+    transform: translate(-50%, -50%);
+    background-color: var(--backgroung-color-menu);
+}
+
+.button-icon-close-mobile {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    background-color: transparent;
+    /* background-color: var(--backgroung-color-menu); */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    fill: black;
+}
+

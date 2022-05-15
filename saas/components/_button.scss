@@ -9,6 +9,28 @@
     cursor: pointer;
     }
 
+/* ========== MENU BUTTON (BURGER) ========== */
+
+    &__icon-menu-mobile {
+        fill: #212121;
+
+        &:hover,
+        &:focus {
+        cursor: pointer;
+        fill: var(--hover-color)
+        }
+    }
+
+    &__icon-close-mobile {
+        fill: #212121;
+
+        &:hover,
+        &:focus {
+        cursor: pointer;
+        fill: var(--hover-color)
+        }
+    }
+
 /* ========== BUTTON in INDEX ========== */
 
     &__order {

@@ -17,9 +17,13 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
             <a class="logo logo__header link" href="index.html">Web<span class="logo_light-theme">Studio</span></a>
+            <svg class="button__icon-menu-mobile" data-menu-open width="24" height="24">
+                <use href="images/icons.svg#icon-menu-mobile"></use>
+            </svg>
+
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-list__item navigation-list__item_active">
@@ -59,7 +63,7 @@
                 </li>
             </ul>
         </div>
-    </header> -->
+    </header>
 
     <main>
         <!-- HERO -->
@@ -534,7 +538,7 @@
         </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <svg class="close-button" data-modal-close>
                 <use href="images/icons.svg#icon-close"></use>
@@ -611,9 +615,36 @@
             </form>
 
         </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
+
+    
+
+    <div class="mobile-menu is-hidden" data-menu>
+
+        <svg class="button__icon-close-mobile" data-menu-close width="20" height="20">
+            <use href="images/icons.svg#icon-close-mobile"></use>
+        </svg>
+
+        <ul class="list mobile-navigation-list">
+            <li class="mobile-navigation-list__item navigation-list__item_active"><a href="./index.html" class="mobile-navigation-list__link">Agencja</a></li>
+            <li class="mobile-navigation-list__item navigation-list__item_active"><a href="./portfolio.html" class="mobile-navigation-list__link">Portfolio</a></li>
+            <li class="mobile-navigation-list__item navigation-list__item_active"><a href="#" class="mobile-navigation-list__link">Kontakt</a></li>
+        </ul>
+        <ul class="list mobile-contact-list">
+            <li class="mobile-contact-list__item"><a href="tel:48111111111" class="mobile-contact-list__link">+48 111 111 111</a></li>
+            <li class="mobile-contact-list__item"><a href="mailto:info@devstudio.com" class="mobile-contact-list__link">info@devstudio.com</a></li>
+        </ul>
+        <ul class="list mobile-menu__social-list">
+            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-link">Instagram</a></li>
+            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-link">Twitter</a></li>
+            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-link">Facebook</a></li>
+            <li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-link">LinkedIn</a></li>
+        </ul>
+    </div>
+    
+    <script src="js/mobile-menu.js"></script>
     
 </body>
 

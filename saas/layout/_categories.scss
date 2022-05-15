@@ -2,24 +2,32 @@
 /* ========== SECTION CATEGORIES + PICTURES in categories section ========== */
 
 .menu {
-    margin-bottom: 26px;
+    margin-bottom: 40px;
+    align-items: center;
 }
 
 .categories-list {
-    @extend .list;
+        list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.categories-item:not(:last-child) {
+.categories-item {
+    margin-bottom: 15px;
+
+    &:not(:last-child) {
     margin-right: 8px;
+    }
 }
 
 .categories-pictures-list {
     @extend .list;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 
     &__item {
         border: 0px solid #eeeeee;
@@ -100,5 +108,27 @@
 .categories-pictures-list__box:hover .categories-pictures-overlay {
     transform: translateY(0);
 }
+
+
+@media screen and (min-width: 768px) {
+    .menu {
+        margin-bottom: 30px;
+    }
+
+    .categories-list {
+        justify-content: center;
+    }
+    
+    .categories-item {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu {
+        margin-bottom: 34px;
+    }
+}
+
 
 /* ========== END CATEGORIES SECTION ========== */

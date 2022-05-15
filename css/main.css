@@ -55,7 +55,7 @@ img {
   height: auto;
 }
 
-.list, .contact-list, .navigation-list, .social-media-list, .footer-social-media-list, .section-hero_list, .discription-list, .section-our-team__list, .section-our-clients-list, .categories-list, .categories-pictures-list {
+.list, .contact-list, .navigation-list, .social-media-list, .footer-social-media-list, .section-hero_list, .discription-list, .section-our-team__list, .section-our-clients-list, .categories-pictures-list {
   list-style: none;
 }
 
@@ -329,6 +329,7 @@ img {
   box-shadow: none;
   border-style: none;
   background-color: var(--hover-color);
+  /* ========== MENU BUTTON (BURGER) ========== */
   /* ========== BUTTON in INDEX ========== */
   /* ========== MENU BUTTON in PORTFOLIO ========== */
   /* ========== BUTTON in FOOTER ========== */
@@ -336,6 +337,24 @@ img {
 
 .button:hover, .button__order:hover, .button__menu:hover, .button__sign-up:hover, .button:focus, .button__order:focus, .button__menu:focus, .button__sign-up:focus {
   cursor: pointer;
+}
+
+.button__icon-menu-mobile {
+  fill: #212121;
+}
+
+.button__icon-menu-mobile:hover, .button__icon-menu-mobile:focus {
+  cursor: pointer;
+  fill: var(--hover-color);
+}
+
+.button__icon-close-mobile {
+  fill: #212121;
+}
+
+.button__icon-close-mobile:hover, .button__icon-close-mobile:focus {
+  cursor: pointer;
+  fill: var(--hover-color);
 }
 
 .button__order {
@@ -434,7 +453,7 @@ img {
 
 /* ========== END LOGO ========== */
 /* ========== BLOK LISTY ========== */
-.list, .contact-list, .navigation-list, .social-media-list, .footer-social-media-list, .section-hero_list, .discription-list, .section-our-team__list, .section-our-clients-list, .categories-list, .categories-pictures-list {
+.list, .contact-list, .navigation-list, .social-media-list, .footer-social-media-list, .section-hero_list, .discription-list, .section-our-team__list, .section-our-clients-list, .categories-pictures-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1174,12 +1193,20 @@ img {
 /* ========== WEBSITE: PORTFOLIO ========== */
 /* ========== SECTION CATEGORIES + PICTURES in categories section ========== */
 .menu {
-  margin-bottom: 26px;
+  margin-bottom: 40px;
+  align-items: center;
 }
 
 .categories-list {
+  list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.categories-item {
+  margin-bottom: 15px;
 }
 
 .categories-item:not(:last-child) {
@@ -1189,7 +1216,8 @@ img {
 .categories-pictures-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .categories-pictures-list__item {
@@ -1265,6 +1293,24 @@ img {
 
 .categories-pictures-list__box:hover .categories-pictures-overlay {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    margin-bottom: 30px;
+  }
+  .categories-list {
+    justify-content: center;
+  }
+  .categories-item {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    margin-bottom: 34px;
+  }
 }
 
 /* ========== END CATEGORIES SECTION ========== */
