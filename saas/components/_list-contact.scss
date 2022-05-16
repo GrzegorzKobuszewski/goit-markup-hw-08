@@ -14,7 +14,9 @@
 
         &__item {
             justify-items: baseline;
-            
+            &:not(:last-child) {
+                padding-bottom: 10px;
+            }        
         }
 
         &__link {
@@ -47,6 +49,10 @@
         display: flex;
         justify-items: baseline;
         fill: var(--text-color-grey);
+
+        &__item {
+            padding-bottom: 0px;
+        }
     }
 
     .contact-list>li:not(:last-child) {

@@ -162,7 +162,7 @@ img {
   padding: 40px;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 400px;
   min-height: 581px;
   transform: translate(-50%, -50%);
   background-color: var(--backgroung-color-menu);
@@ -322,6 +322,19 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    min-height: 581px;
+    transform: translate(-50%, -50%);
+    background-color: var(--backgroung-color-menu);
+  }
 }
 
 .mobile-menu {
@@ -596,6 +609,9 @@ img {
   .contact-list__item {
     justify-items: baseline;
   }
+  .contact-list__item:not(:last-child) {
+    padding-bottom: 10px;
+  }
   .contact-list__link {
     font-weight: 500;
     font-size: 14px;
@@ -621,6 +637,9 @@ img {
     display: flex;
     justify-items: baseline;
     fill: var(--text-color-grey);
+  }
+  .contact-list__item {
+    padding-bottom: 0px;
   }
   .contact-list > li:not(:last-child) {
     margin-right: 50px;
