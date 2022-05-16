@@ -2,14 +2,15 @@
 
 .header {
     border-bottom: 1px solid #ECECEC;
-    padding: 0px;
     display: flex;
     align-items: center;
-    padding: 16px 0px 16px 15px;
+    padding: 16px 15px 16px 15px;
 }
 
 .header .contact-list {
     margin-left: auto;
+    padding-left: 15px;
+    
 }
 
 .adress-link {
