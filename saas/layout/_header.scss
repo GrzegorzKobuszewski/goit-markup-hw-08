@@ -24,7 +24,7 @@
 
     .header > .container {
         display: flex;
-        align-items: baseline;
+        justify-content: center;
         list-style: none;
         padding: 26px 0px 26px 15px;
     }
@@ -34,7 +34,7 @@
 
     .header>.container {
         display: flex;
-        align-items: baseline;
+        justify-content: center;
         list-style: none;
         padding: 24px 0px 25px 15px;
     }

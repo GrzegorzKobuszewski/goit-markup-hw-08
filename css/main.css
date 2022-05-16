@@ -590,6 +590,7 @@ img {
   .contact-list {
     list-style: none;
     display: block;
+    justify-content: center;
     margin-left: 100px;
     fill: var(--text-color-grey);
   }
@@ -772,7 +773,7 @@ img {
 @media screen and (min-width: 768px) {
   .header > .container {
     display: flex;
-    align-items: baseline;
+    justify-content: center;
     list-style: none;
     padding: 26px 0px 26px 15px;
   }
@@ -781,7 +782,7 @@ img {
 @media screen and (min-width: 1200px) {
   .header > .container {
     display: flex;
-    align-items: baseline;
+    justify-content: center;
     list-style: none;
     padding: 24px 0px 25px 15px;
   }
