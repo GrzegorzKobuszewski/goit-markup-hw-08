@@ -430,8 +430,8 @@ img {
 .button__icon-menu-mobile {
   fill: #212121;
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 20px;
+  right: 20px;
 }
 
 .button__icon-menu-mobile:hover, .button__icon-menu-mobile:focus {
@@ -442,8 +442,8 @@ img {
 .button__icon-close-mobile {
   fill: #212121;
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 20px;
+  right: 20px;
 }
 
 .button__icon-close-mobile:hover, .button__icon-close-mobile:focus {
@@ -558,13 +558,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .logo__header {
-    margin: 26px 0px 26px 15px;
+    display: flex;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .logo__header {
-    margin: 26px 0px 26px 15px;
+    display: flex;
   }
   .logo__footer {
     justify-content: left;
@@ -589,9 +589,12 @@ img {
 @media screen and (min-width: 768px) {
   .contact-list {
     list-style: none;
-    display: flex;
-    align-items: center;
+    display: block;
+    margin-left: 100px;
     fill: var(--text-color-grey);
+  }
+  .contact-list__item {
+    justify-items: baseline;
   }
   .contact-list__link {
     font-weight: 500;
@@ -599,8 +602,6 @@ img {
     line-height: 1.143;
     letter-spacing: 0.02em;
     text-decoration: none;
-    display: flex;
-    align-items: center;
     color: var(--text-color-grey);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -612,6 +613,16 @@ img {
   .contact-list__icon {
     margin-right: 10px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    list-style: none;
+    display: flex;
+    justify-items: baseline;
+    margin-right: 100px;
+    fill: var(--text-color-grey);
+  }
   .contact-list > li:not(:last-child) {
     margin-right: 50px;
   }
@@ -619,6 +630,10 @@ img {
 
 /* ========== END KONTAKTU w MENU STRONYY ========== */
 /* ========== NAWIGACJA, czyli MENU STRONY ========== */
+.navigation {
+  display: inline-block;
+}
+
 .navigation-list {
   display: none;
 }
@@ -628,6 +643,7 @@ img {
     display: flex;
     align-items: baseline;
     list-style: none;
+    margin-left: 83px;
   }
   .navigation-list > li:not(:last-child) {
     margin-right: 46px;
@@ -738,7 +754,7 @@ img {
   padding: 0px;
   display: flex;
   align-items: center;
-  padding: 26px 0px 26px 15px;
+  padding: 16px 0px 16px 15px;
 }
 
 .header .contact-list {
@@ -751,6 +767,24 @@ img {
   color: var(--text-color-grey);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .header > .container {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+    padding: 26px 0px 26px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header > .container {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+    padding: 24px 0px 25px 15px;
+  }
 }
 
 /* ========== END HEADER ========== */

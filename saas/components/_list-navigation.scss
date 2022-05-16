@@ -1,5 +1,9 @@
 /* ========== NAWIGACJA, czyli MENU STRONY ========== */
 
+.navigation {
+    display: inline-block;
+}
+
 .navigation-list {
     display: none;
 }
@@ -10,6 +14,7 @@
         display: flex;
         align-items: baseline;
         list-style: none;
+        margin-left: 83px;
     }
 
     .navigation-list>li:not(:last-child) {

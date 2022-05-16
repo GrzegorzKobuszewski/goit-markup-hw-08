@@ -8,10 +8,15 @@
 
     .contact-list {
         list-style: none;
-        display: flex;
-        align-items: center;
+        display: block;
         
+        margin-left: 100px;
         fill: var(--text-color-grey);
+
+        &__item {
+            justify-items: baseline;
+            
+        }
 
         &__link {
             font-weight: 500;
@@ -19,8 +24,6 @@
             line-height: 1.143;
             letter-spacing: 0.02em;
             text-decoration: none;
-            display: flex;
-            align-items: center;
             color: var(--text-color-grey);
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -35,6 +38,17 @@
         &__icon {
             margin-right: 10px;
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .contact-list {
+        list-style: none;
+        display: flex;
+        justify-items: baseline;
+        margin-right: 100px;
+        fill: var(--text-color-grey);
     }
 
     .contact-list>li:not(:last-child) {
